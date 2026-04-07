@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Jurusan Busana</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)),
+                  url('data:image/jpeg;base64,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');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .feature-icon {
+      width: 50px;
+      height: 50px;
+      background: #f3e8ff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      font-size: 24px;
+      color: #6f42c1;
+    }
+
+    .sidebar-card {
+      border-radius: 12px;
+    }
+
+    .footer{
+background:#111;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:30px;
+}
+  </style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <h2 class="fw-bold">DESAIN DAN PRODUKSI BUSANA</h2>
+    <p>
+      Jurusan yang membekali siswa dengan keterampilan desain fashion,
+      pembuatan pola, hingga produksi busana modern dan kreatif.
+    </p>
+  </div>
+</section>
+
+<!-- CONTENT -->
+<div class="container my-5">
+  <div class="row g-4">
+
+    <!-- LEFT -->
+    <div class="col-lg-8">
+      <div class="card p-4 shadow-sm">
+
+        <h4 class="fw-bold mb-3">Mengembangkan Kreativitas di Dunia Fashion</h4>
+        <p>
+          Jurusan Busana mempelajari desain pakaian, teknik menjahit,
+          pembuatan pola, serta tren fashion modern untuk menciptakan
+          karya busana yang inovatif dan bernilai jual.
+        </p>
+
+        <!-- FEATURES -->
+        <div class="row mt-4">
+
+          <!-- DESIGN -->
+          <div class="col-md-6 d-flex gap-3 mb-3">
+            <div class="feature-icon">
+              <i class="bi bi-palette"></i>
+            </div>
+            <div>
+              <h6 class="fw-bold mb-1">Fashion Design</h6>
+              <small class="text-muted">
+                Mendesain pakaian sesuai tren dan kreativitas
+              </small>
+            </div>
+          </div>
+
+          <!-- SEWING -->
+          <div class="col-md-6 d-flex gap-3 mb-3">
+            <div class="feature-icon">
+              <i class="bi bi-scissors"></i>
+            </div>
+            <div>
+              <h6 class="fw-bold mb-1">Sewing & Pattern</h6>
+              <small class="text-muted">
+                Teknik menjahit dan pembuatan pola profesional
+              </small>
+            </div>
+          </div>
+
+        </div>
+
+        <hr>
+
+        <!-- FASILITAS -->
+        <h5 class="fw-bold">Fasilitas Unggulan</h5>
+        <ul class="list-group list-group-flush mt-3">
+          <li class="list-group-item d-flex justify-content-between">
+            Lab Menjahit <span class="badge bg-secondary">2 Lab</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            Mesin Jahit Modern <span class="badge bg-dark">Lengkap</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            Fashion Show <span class="badge bg-primary">Event Tahunan</span>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="col-lg-4">
+      <div class="card sidebar-card shadow-sm p-3">
+
+        <h6 class="fw-bold text-center mb-3">Status Pendaftaran</h6>
+
+        <div class="d-flex justify-content-between">
+          <small>Kuota Terisi</small>
+          <small>80%</small>
+        </div>
+
+        <div class="progress my-2">
+          <div class="progress-bar bg-secondary" style="width: 80%"></div>
+        </div>
+
+        <button class="btn btn-secondary w-100 mt-2">
+          DAFTAR SEKARANG
+        </button>
+
+      </div>
+      <div class="card shadow-sm mt-4">
+
+  <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
+       class="card-img-top"
+       style="height:200px; object-fit:cover;">
+
+  <div class="card-body">
+    <p class="fst-italic text-muted">
+      "Di jurusan busana saya belajar desain sampai menjahit sendiri, bahkan pernah ikut fashion show!"
+    </p>
+    <p class="fw-bold mb-0">- Sherry, Alumni 2024</p>
+  </div>
+
+</div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
